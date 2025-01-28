@@ -48,13 +48,13 @@ export default function Home() {
           {/* Responsif pada ikon sosial */}
           <div className="text-5xl flex justify-center gap-16 py-0 text-gray-600 flex-wrap">
             <a href="https://www.instagram.com/nrrssyydd?igsh=eTAyYjFkbGltZzlp" target="_blank" rel="noopener noreferrer">
-              <AiFillInstagram className="cursor-pointer hover:text-orange-700 text-5xl md:text-5xl" />
+              <AiFillInstagram className="cursor-pointer hover:text-orange-700 text-4xl md:text-5xl" />
             </a>
             <a href="https://www.linkedin.com/in/ragil-nur-rasyid-10b5972b4/?originalSubdomain=id" target="_blank" rel="noopener noreferrer">
-              <AiFillLinkedin className="cursor-pointer hover:text-orange-700 text-5xl md:text-5xl" />
+              <AiFillLinkedin className="cursor-pointer hover:text-orange-700 text-4xl md:text-5xl" />
             </a>
             <a href="https://wa.me/qr/UTKKEN4ZFP6UG1" target="_blank" rel="noopener noreferrer">
-              <IoLogoWhatsapp className="cursor-pointer hover:text-orange-700 text-5xl md:text-5xl" />
+              <IoLogoWhatsapp className="cursor-pointer hover:text-orange-700 text-4xl md:text-5xl" />
             </a>
           </div>
 
