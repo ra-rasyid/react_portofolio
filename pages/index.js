@@ -32,7 +32,7 @@ export default function Home() {
               </li>
               <li>
                 {/* Tombol resume */}
-                <a className="bg-orange-700 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
+                <a className="bg-orange-700 text-white px-4 py-2 rounded-md ml-8" href="https://www.cake.me/s--CyOAI61FE2tHNUu9tEiOYw--/ragil-nur-rasyid">Resume</a>
               </li>
             </ul>
           </nav>
