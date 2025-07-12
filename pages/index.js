@@ -61,29 +61,28 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Ikon media sosial dengan tautan */}
+          <div className="flex flex-wrap justify-center gap-8 sm:gap-12 py-6 text-gray-600 text-4xl md:text-5xl">
+            {/* Instagram */}
+            <a href="https://www.instagram.com/nrrssyydd?igsh=eTAyYjFkbGltZzlp" target="_blank" rel="noopener noreferrer">
+              <AiFillInstagram className="cursor-pointer hover:text-orange-700" />
+            </a>
 
-{/* Ikon media sosial dengan tautan */}
-<div className="flex flex-wrap justify-center gap-8 sm:gap-12 py-6 text-gray-600 text-4xl md:text-5xl">
-  {/* Instagram */}
-  <a href="https://www.instagram.com/nrrssyydd?igsh=eTAyYjFkbGltZzlp" target="_blank" rel="noopener noreferrer">
-    <AiFillInstagram className="cursor-pointer hover:text-orange-700" />
-  </a>
+            {/* LinkedIn */}
+            <a href="https://www.linkedin.com/in/ragil-nur-rasyid-10b5972b4/?originalSubdomain=id" target="_blank" rel="noopener noreferrer">
+              <AiFillLinkedin className="cursor-pointer hover:text-orange-700" />
+            </a>
 
-  {/* LinkedIn */}
-  <a href="https://www.linkedin.com/in/ragil-nur-rasyid-10b5972b4/?originalSubdomain=id" target="_blank" rel="noopener noreferrer">
-    <AiFillLinkedin className="cursor-pointer hover:text-orange-700" />
-  </a>
+            {/* Email */}
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ragilnurrasyid2004@gmail.com" target="_blank" rel="noopener noreferrer">
+              <AiFillMail className="cursor-pointer hover:text-orange-700" />
+            </a>
 
-  {/* Email */}
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ragilnurrasyid2004@gmail.com" target="_blank" rel="noopener noreferrer">
-    <AiFillMail className="cursor-pointer hover:text-orange-700" />
-  </a>
-
-  {/* WhatsApp */}
-  <a href="https://wa.me/qr/UTKKEN4ZFP6UG1" target="_blank" rel="noopener noreferrer">
-    <IoLogoWhatsapp className="cursor-pointer hover:text-orange-700" />
-  </a>
-</div>
+            {/* WhatsApp */}
+            <a href="https://wa.me/qr/UTKKEN4ZFP6UG1" target="_blank" rel="noopener noreferrer">
+              <IoLogoWhatsapp className="cursor-pointer hover:text-orange-700" />
+            </a>
+          </div>
 
           {/* Gambar profil dengan background gradient */}
           <div className='relative mx-auto bg-gradient-to-b from-orange-700 rounded-full w-72 h-72 mt-10 mb-6 md:w-96 md:h-96 md:mt-16'>
@@ -96,7 +95,6 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-10">My Projects</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-
             {/* Contoh 2 */}
             <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
               <Image src="/Desain keyboard.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
@@ -107,13 +105,13 @@ export default function Home() {
 
             {/* Contoh 2 */}
             <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-              <Image src="/desain colorAcak.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
+              <Image src="/Desain colorAcak.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
               <h3 className="text-xl font-semibold mt-4">Random Color RGB</h3>
               <p className="text-gray-600 dark:text-gray-300 mt-2">A Project Random with Page Random Color with RGB betwen colom and space!</p>
               <a href="https://color-acak.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
             </div>
 
-                        {/* Contoh 2 */}
+            {/* Contoh 2 */}
             <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
               <Image src="/Desain keyboard.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
               <h3 className="text-xl font-semibold mt-4">Keyboard Showcase</h3>
