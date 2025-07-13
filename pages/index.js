@@ -1,7 +1,7 @@
 import Head from 'next/head'; // Komponen Head untuk memasukkan metadata halaman
 import { BsFillMoonStarsFill } from 'react-icons/bs'; // Icon untuk mode gelap
 import { IoLogoWhatsapp } from "react-icons/io"; // Icon untuk WhatsApp
-import { AiFillLinkedin, AiFillInstagram, AiFillMail } from 'react-icons/ai'; // Icon untuk LinkedIn dan Instagram
+import { AiFillLinkedin, AiFillInstagram, AiFillMail, AiFillGithub } from 'react-icons/ai'; // Icon untuk LinkedIn dan Instagram
 import Image from 'next/image'; // Komponen Image dari Next.js untuk optimasi gambar
 import rasyid from '../public/avatar_rasyid.png'; // Import gambar profil
 import { useState } from 'react'; // Hook useState untuk mengelola state
@@ -63,9 +63,19 @@ export default function Home() {
 
           {/* Ikon media sosial dengan tautan */}
           <div className="flex flex-wrap justify-center gap-8 sm:gap-12 py-6 text-gray-600 text-4xl md:text-5xl">
+            {/* WhatsApp */}
+            <a href="https://wa.me/qr/UTKKEN4ZFP6UG1" target="_blank" rel="noopener noreferrer">
+              <IoLogoWhatsapp className="cursor-pointer hover:text-orange-700" />
+            </a>
+
             {/* Instagram */}
             <a href="https://www.instagram.com/nrrssyydd?igsh=eTAyYjFkbGltZzlp" target="_blank" rel="noopener noreferrer">
               <AiFillInstagram className="cursor-pointer hover:text-orange-700" />
+            </a>
+
+            {/* github */}
+            <a href="https://github.com/ra-rasyid" target="_blank" rel="noopener noreferrer">
+              <AiFillGithub className="cursor-pointer hover:text-orange-700" />
             </a>
 
             {/* LinkedIn */}
@@ -78,10 +88,6 @@ export default function Home() {
               <AiFillMail className="cursor-pointer hover:text-orange-700" />
             </a>
 
-            {/* WhatsApp */}
-            <a href="https://wa.me/qr/UTKKEN4ZFP6UG1" target="_blank" rel="noopener noreferrer">
-              <IoLogoWhatsapp className="cursor-pointer hover:text-orange-700" />
-            </a>
           </div>
 
           {/* Gambar profil dengan background gradient */}
@@ -95,31 +101,86 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-10">My Projects</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-            {/* Contoh 2 */}
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-              <Image src="/Desain keyboard.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
-              <h3 className="text-xl font-semibold mt-4">Keyboard Showcase</h3>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">A showcase web for mechanical keyboard built with React.</p>
-              <a href="https://clackify.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
+          {/* Project 1 */}
+          <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <Image src="/Desain keyboard.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
+            <h3 className="text-xl font-semibold mt-4 text-center">Keyboard Showcase</h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-2 text-justify">
+              A modern web application that showcases various mechanical keyboard designs, built using React. It highlights the aesthetic and functional aspects of each keyboard.
+            </p>
+            <a href="https://clackify.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
+          </div>
+
+          {/* Project 2 */}
+          <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <Image src="/Desain colorAcak.png" alt="Random Color RGB" width={500} height={300} className="rounded-md" />
+            <h3 className="text-xl font-semibold mt-4 text-center">Random Color RGB</h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-2 text-justify">
+              A simple and interactive website that generates random RGB colors. Developed using plain JavaScript, it allows users to explore dynamic color variations easily.
+            </p>
+            <a href="https://color-acak.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
+          </div>
+
+          {/* Project 3 */}
+          <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <Image src="/Desain buangin.png" alt="Buangin App" width={500} height={300} className="rounded-md" />
+            <h3 className="text-xl font-semibold mt-4 text-center">Buangin</h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-2 text-justify">
+              (mobile) A mobile application that enables users to request trash pickup services easily. Built using Flutter, Buangin streamlines the waste disposal process with an intuitive interface.
+            </p>
+            <a href="https://clackify.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
+          </div>
+          </div>
+        </section>
+
+        {/* Bagian Skills */}
+        <section className="pt-10 pb-20 px-5 md:px-20 lg:px-40">
+          <h2 className="text-4xl font-bold text-center mb-10">My Skills</h2>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-gray-700 dark:text-gray-300">
+            {/* Mobile & Frontend */}
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Flutter</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Dart</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">React.js</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Next.js</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Tailwind CSS</p>
             </div>
 
-            {/* Contoh 2 */}
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-              <Image src="/Desain colorAcak.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
-              <h3 className="text-xl font-semibold mt-4">Random Color RGB</h3>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">A Project Random with Page Random Color with RGB betwen colom and space!</p>
-              <a href="https://color-acak.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
+            {/* Backend & Database */}
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">PHP</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Firebase</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">SQL & Query</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Database Management</p>
             </div>
 
-            {/* Contoh 2 */}
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-              <Image src="/Desain keyboard.png" alt="Keyboard Web" width={500} height={300} className="rounded-md" />
-              <h3 className="text-xl font-semibold mt-4">Keyboard Showcase</h3>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">A showcase web for mechanical keyboard built with React.</p>
-              <a href="https://clackify.vercel.app/" target="_blank" className="text-orange-700 mt-3 inline-block">View Project</a>
+            {/* General Programming */}
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">JavaScript</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Python</p>
             </div>
 
-            {/* Tambahkan project lainnya di sini */}
+            {/* Specialization */}
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-md transition duration-300">
+              <p className="font-semibold">Prompt Engineering</p>
+            </div>
           </div>
         </section>
 
